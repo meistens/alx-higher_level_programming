@@ -1,0 +1,1 @@
+Scripting with bash, python and C (there's no getting rid of it)
