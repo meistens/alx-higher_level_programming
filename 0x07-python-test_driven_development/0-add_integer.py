@@ -4,15 +4,16 @@
 0-add_integer module
 """
 
+
 def add_integer(a, b=98):
     """
-    check if a and b are a instance of floats and ints and assign their respective values
+    check if a and b are a instance of floats
+    cast the floats to ints (convert)
     """
     if isinstance(a, float):
         a = int(a)
     if isinstance(b, float):
         b = int(b)
-
     """
     if above is not true, raise TypeError
     """

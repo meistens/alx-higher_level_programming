@@ -49,7 +49,19 @@ Traceback (most recent call last):
 TypeError: a must be an integer
 
 ### no No values passed
-add_integer(None)
+>>> add_integer(None)
 Traceback (most recent call last):
 ...
 TypeError: a must be an integers
+
+### float overflow
+>>> add_integer(1, 10e+1000)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float inginity to integer
+
+### float NaN to integer
+>>> add_integer(1, (10e+1000 / 10e+1000))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
